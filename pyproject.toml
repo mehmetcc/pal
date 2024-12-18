@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pal"
+version = "0.1.0"
+description = ""
+authors = ["mehmetcc <mehmetccm@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pal", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+fastapi = "^0.115.6"
+uvicorn = "^0.34.0"
+safetensors = "^0.4.5"
+transformers = "^4.47.1"
+msgpack = "^1.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
