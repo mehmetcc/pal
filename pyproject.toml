@@ -4,15 +4,19 @@ version = "0.1.0"
 description = ""
 authors = ["mehmetcc <mehmetccm@gmail.com>"]
 readme = "README.md"
-packages = [{include = "pal", from = "src"}]
+packages = [{ include = "pal", from = "src" }]
 
 [tool.poetry.dependencies]
-python = "^3.13"
+python = "^3.12"
 fastapi = "^0.115.6"
 uvicorn = "^0.34.0"
 safetensors = "^0.4.5"
 transformers = "^4.47.1"
+torch = "^2.5.1"
+accelerate = "^1.2.1"
 
+[tool.poetry.scripts]
+start = "pal.main:start"
 
 [build-system]
 requires = ["poetry-core"]
