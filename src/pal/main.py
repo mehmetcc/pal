@@ -12,7 +12,7 @@ logging.basicConfig(level=logging.INFO,
 app = FastAPI()
 
 app.include_router(status_router)
-app.include_router(query_router, prefix="/api/v1")
+app.include_router(query_router)
 
 
 @app.on_event("startup")
